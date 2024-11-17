@@ -49,7 +49,7 @@ class TV:
         return self._volumen
     
     def setVolumen(self, nuevoVolumen):
-        if self.getEstado == True:
+        if self.getEstado() == True:
             if nuevoVolumen >= 0 and nuevoVolumen <=7:
                 self._volumen = nuevoVolumen
             else:
