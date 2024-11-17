@@ -69,12 +69,12 @@ class TV:
     #método get y set de clase para numTv
     @classmethod
 
-    def getNumTv(cls):
+    def getNumTV(cls):
         return cls._numTV
     
     @classmethod
 
-    def setNumTv(cls, nuevoNumTv):
+    def setNumTV(cls, nuevoNumTv):
         cls._numTV = nuevoNumTv
 
     
@@ -120,7 +120,7 @@ class TV:
             return
     
     def volumenDown(self):
-        if self.getEstado == True:
+        if self.getEstado() == True:
             if self.getVolumen() > 0:
                 self._volumen -= 1
             else:
